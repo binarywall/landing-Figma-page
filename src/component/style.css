@@ -252,6 +252,7 @@
     line-height: 1.5;
     text-transform: capitalize;
     padding-bottom: 4px;
+    font-weight: bold;
 }
 
 .timing {
@@ -287,17 +288,22 @@
 
 .list-data {
     max-width: 370px;
+    width: 100%;
     padding-right: 15px;
     padding-top: 7px;
     padding-bottom: 7px;
+
 }
 
 .list-duration {
     font-size: 12px;
+    width: 82px;
+    flex-shrink: 0;
     font-style: normal;
     font-weight: 400;
     padding-top: 7px;
     padding-bottom: 7px;
+    text-align: right;
 }
 
 .main ul li:not(:last-child) {
@@ -526,8 +532,8 @@
     }
     .topIcon-mobile{
         position: absolute;
-        left: 244px;
-        top: -12px;
+        right: 0;
+        top: -16px;
     }
     .banner-content p {
         font-size: 12px;
@@ -564,9 +570,17 @@
     }
     .main ul li::before{
         font-size: 10px;
-        max-width: 16px;
-        max-height: 16px;
+        width: 14px;
+        height: 14px;
         line-height: 12px;
+        top: 14px;
+    }
+    .list-data,.list-duration{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .main ul li:nth-child(4)::before{
+        top:24px
     }
     .btnBox{
         max-width: 208px;
@@ -693,6 +707,7 @@
     .about{
         border: none;
         margin: auto;
+        padding: 80px 0 44px;
         box-shadow: none;
     }
     .banner2{
