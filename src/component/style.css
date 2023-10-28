@@ -17,7 +17,7 @@
     background: #202C38;
     color: #fff;
     padding: 44px 0 35px;
-
+    margin-top: 107px;
 }
 
 .header-banner::before {
@@ -503,7 +503,9 @@
 
 
 @media (max-width:767px) {
-
+    .header-banner{
+        margin-top: 34px;
+    }
 
     .header-banner::after,
     .header-banner::before {
